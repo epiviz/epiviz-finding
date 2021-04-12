@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../node_modules/@kor-ui/kor/kor-styles.css"
+  />
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../dist/epiviz-finding.js';
+
+    render(
+      html`
+        <epiviz-finding wid=1>
+          some more light-dom
+        </epiviz-finding>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
